@@ -1,0 +1,59 @@
+*{  
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Wix Madefor Text', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.nav{
+    box-shadow: 1px 1px 5px #bbb;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+    list-style: none;
+    padding-right: 25px;
+}
+
+.nav a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+
+
+.nav a:hover{
+    transform: scale(1.1);
+    color: #bbb;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.perfil-box{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.info-description{
+    display: flex;
+    align-items:center;
+}
+
