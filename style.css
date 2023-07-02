@@ -20,22 +20,22 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 25px;
+    gap: 30px;
     list-style: none;
     padding-right: 25px;
+    align-items: center;
 }
 
 .nav a{
+    font-size: 18px;
     color: #000;
     text-decoration: none;
-    font-weight: 500;
-    transition: 0.4s;
+    font-weight: 450;
+    transition: 0.3s;
 }
 
 
-
 .nav a:hover{
-    transform: scale(1.1);
     color: #bbb;
 }
 
@@ -43,17 +43,71 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10em;
 }
 
 
 .perfil-box{
     display: flex;
     flex-direction: row;
+    gap: 100px;
 }
 
 
 .info-description{
+    font-size: 20px;
     display: flex;
-    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    gap: 13px;
 }
 
+.info-description p{
+    font-weight: 500;
+    color: #585858;
+    font-size: 18px;
+}
+
+
+.perfil-img img{
+    border-radius: 190px;
+    width: 180%;
+    
+}
+
+.socials {
+    display: flex;
+    gap: 30px;
+}
+
+.socials i{
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+.socials i:hover{
+    transform: scale(1.1);
+}
+
+
+
+.abilities-box {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 2em;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    font-size: 30px;
+}
+
+.about-box{
+    display: flex;
+}
