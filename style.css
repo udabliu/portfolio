@@ -7,13 +7,22 @@
     box-sizing: border-box;
 }
 
+body p{
+    line-height: 30px;
+    font-size: 17px;
+    color: #585858;
+    
+}
 
 .nav{
+    position: fixed;
     box-shadow: 1px 1px 5px #bbb;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 1em;
+    background-color: #fff;
+    width: 100%;
 }
 
 .nav ul{
@@ -44,7 +53,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 300px;
+    padding: 200px;
 }
 
 
@@ -122,8 +131,6 @@
 }
 
 .about-description p {
-    font-size: 17px;
-    color: #585858;
     padding: 40px;
 }
 
@@ -142,21 +149,128 @@
 }
 
 .portfolio-box {
+    padding: 100px;
     display: flex;
     flex-direction: column;
-    background-color: #eee;
-    margin: 200px;
+    gap: 100px;
 }
 
-
-.main-title-port{
-    text-align: left;
+.portfolio-description {
+    text-align: center;
 }
-
 
 
 .portfolio-box img {
-    width: 70%;
+    width: 600px;
 }
 
+.magnum,
+.linktree{
+    background-color:#eee;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 100px;
+    padding: 30px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.magnum-description i,
+.imc-description i,
+.linktree-description i,
+.login-description i{
+    font-size: 25px;
+    
+}
+
+
+.magnum-description h2,
+.imc-description h2,
+.linktree-description h2,
+.login-description h2{
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    text-underline-position: under;
+}
+
+.magnum-description h2 {
+    text-decoration: underline #ffb20d 3px;
+}
+
+.imc-description h2{
+    text-decoration: underline #4ebd57 3px;
+}
+
+.linktree-description h2 {
+    text-decoration: underline #af7345 3px;
+}
+
+.login-description h2 {
+    text-decoration: underline #6cccf8 3px;
+}
+
+.magnum img,
+.calculadora-imc img,
+.linktree img,
+.login img{
+    border-radius: 10px;
+}
+
+.magnum-source,
+.imc-source,
+.linktree-source,
+.login-source {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.magnum-source a,
+.imc-source a,
+.linktree-source a,
+.login-source a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.magnum-source i,
+.imc-source i,
+.linktree-source i,
+.login-source{
+    font-size: 25px;
+}
+
+.magnum-source a:hover
+    {
+    color: #ffb20d;
+}
+
+.imc-source a:hover{
+    color: #4ebd57;
+}
+
+.linktree-source a:hover{
+    color: #af7345;
+}
+
+.login-source a:hover {
+    color: #6cccf8;
+}
+
+.calculadora-imc,
+.login{
+    background-color:#eee;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 100px;
+    padding: 30px;
+    max-width: 100%;
+    text-align: center;
+}
 
