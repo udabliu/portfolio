@@ -40,10 +40,11 @@
 }
 
 .info-box{
+    background-color: #eee;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10em;
+    padding: 300px;
 }
 
 
@@ -61,6 +62,7 @@
     flex-direction: column;
     align-items: left;
     gap: 13px;
+    
 }
 
 .info-description p{
@@ -108,6 +110,53 @@
     font-size: 30px;
 }
 
-.about-box{
-    display: flex;
+.about-box {
+    padding: 150px;
 }
+
+.about-description {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+}
+
+.about-description p {
+    font-size: 17px;
+    color: #585858;
+    padding: 40px;
+}
+
+.about-box img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.main-titles {
+    padding: 10px;
+    text-align: center;
+}
+
+.main-titles-about {
+    padding-left: 40px;
+}
+
+.portfolio-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    margin: 200px;
+}
+
+
+.main-title-port{
+    text-align: left;
+}
+
+
+
+.portfolio-box img {
+    width: 70%;
+}
+
+
