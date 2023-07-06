@@ -11,11 +11,11 @@
     <title>Ulisses.dev</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav class="nav">
-            <h1>Ulisses.Dev</h1>
+            <a href="#home"><h1> Ulisses.Dev</h1></a>
             <ul>
-                <li><a href="/index.html">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about-section">Sobre</a></li>
                 <li><a href="#portfolio-section">Projetos</a></li>
                 <li><a href="#contact-section">Contato</a></li>
@@ -58,31 +58,33 @@
         </div>
 
         
-
-        <div class="about-box" id="about-section">
-            
+    <section id="about-section">
+        <div class="about-box"> 
             <div class="about-description">
                 <img src="/img/estudo.jpg" alt="">  
                     <div class="about-text">   
                         <div class="main-titles-about">
                             <h2>Sobre Mim</h2>
                         </div>      
-                        <p>Sou um desenvolvedor iniciante,porém muito dedicado,que ama aprender <br> sobre tudo que me fascina
-                        principalmente sobre esse mundo da tecnologia <br> e desenvolvimento. Possuo conhecimento em Html,Css,Javascript e Python <br>
-                        e estou masterizando meus conhecimentos e habilidades nos mesmos, <br> pretendendo seguir com o framework ReactJs
+                        <p>Sou um desenvolvedor iniciante,porém muito dedicado,que ama aprender sobre tudo que me fascina
+                        principalmente sobre esse mundo da tecnologia e desenvolvimento. Possuo conhecimento em Html,Css,Javascript e Python 
+                        e estou masterizando meus conhecimentos e habilidades nos mesmos, pretendendo seguir com o framework ReactJs
                         terminar depois... </p>
                     </div>
             </div>
         </div>
-<div class="portfolio-box">
-        <div class="portfolio-description" id="portfolio-section">
-            <div class="main-title-port">
-                <h2>Portfolio</h2>
+    </section>
+
+    <section id="portfolio-section">
+        <div class="portfolio-box">
+            <div class="portfolio-description">
+                <div class="main-title-port">
+                    <h2>Portfolio</h2>
+                </div>
+                <div class="impact-phrase">
+                    <h3>Todos os meus projetos em um só lugar</h3>
+                </div>
             </div>
-            <div class="impact-phrase">
-                <h3>Todos os meus projetos em um só lugar</h3>
-            </div>
-        </div>
 
         
 <!------------------------------------------------------------------------------------------------------------------->
@@ -136,8 +138,7 @@
             </div>
 
 <!------------------------------------------------------------------------------------------------------------------->
-            <div class="login">
-                    
+            <div class="login">     
                 <div class="login-description">
                     <i class="fa-solid fa-right-to-bracket"></i>
                     <h2>Tela de Login</h2>
@@ -150,10 +151,11 @@
                     </div>
                 </div>
                 <img src="/img/Login.png" alt=""> 
-            </div>
-            
+            </div>  
         </div>
-
+    </section>
+    
+    <section id="contact-section">
         <div class="contact">
             <div class="main-titles">
                 <h2>Contato</h2>
@@ -161,11 +163,12 @@
             <div class="contact-description">
                 <h3>Onde me encontrar:</h3>
             </div>
-            <div class="contact-links" id="contact-section">
+            <div class="contact-links">
                 <h3>Localização</h3>
                 <i class="fa-solid fa-location-dot"></i> <span>Betim-MG Brasil </span>
             </div>
         </div>
+    </section>
     </main>
 
     <footer>
