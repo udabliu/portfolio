@@ -11,20 +11,14 @@ html {
     scroll-behavior: smooth;
   }
   
-
-body p{
-    line-height: 30px;
-    font-size: 17px;
-    color: #585858;
-}
-
-body{
+main{
     background-image: linear-gradient(rgb(99, 99, 99),rgb(184, 184, 184));
-    position: relative;
 }
 
-.nav{
+
+.navbar{
     position: fixed;
+    z-index: 1000;
     box-shadow: 1px 1px 5px #bbb;
     display: flex;
     flex-direction: row;
@@ -34,7 +28,7 @@ body{
     width: 100%;
 }
 
-.nav ul{
+.navbar ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -44,7 +38,7 @@ body{
     align-items: center;
 }
 
-.nav a{
+.navbar a{
     font-size: 18px;
     color: #000;
     text-decoration: none;
@@ -53,7 +47,7 @@ body{
 }
 
 
-.nav a:hover{
+.navbar a:hover{
     color: #bbb;
 }
 
@@ -84,7 +78,7 @@ body{
 }
 
 .info-description p{
-    font-weight: 600;
+    font-weight: 598;
     color: #686868;
     font-size: 20px;
 }
@@ -104,7 +98,7 @@ body{
 .socials i{
     text-decoration: none;
     font-size: 35px;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .socials i:hover{
@@ -112,24 +106,18 @@ body{
 }
 
 
-
 .abilities-box {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    gap: 30px;
-    padding-top: 2em;
-    font-size: 23px;
-}
-
-.abilities-box i{
-    font-size: 33px;
+    font-size: 1.7rem;
+    gap: 1rem;
 }
 
 .languages {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    align-items: center;
+    align-items: left;
     font-size: 30px;
 }
 
@@ -150,6 +138,8 @@ body{
 }
 
 .about-description p {
+    line-height: 27px;
+    font-size: 18px;
     padding: 40px;
     color: #fff;
 }
@@ -314,3 +304,185 @@ body{
     padding: 3rem;
 }
 
+
+#menu-bar{
+    display: none;
+}
+
+
+header label{
+    font-size: 20px;
+    color: #000000;
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+    header{
+        background-color: #fff;
+        width: 100%;
+        padding: 20px;
+        
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        box-shadow: none;
+        position: relative;
+        display: none;
+    }
+
+    header .navbar ul {
+        flex-direction: column;
+        padding: 13px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .navbar a {
+        font-size: 15px;
+        color: #000;
+    }
+
+    header .navbar h1{
+        display: none;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }
+
+
+    .perfil-img img {
+        width: 15rem;
+    }
+
+    .info-box{
+        text-align: center;
+        padding: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    
+    }
+    
+    .perfil-box{
+        gap: 1rem;
+        flex-direction: column-reverse;
+    }
+
+    .socials a{
+        text-align: center;
+    }
+
+    .info-description{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        
+    }
+
+    .info-description p{
+        font-size: 18px;
+    }
+
+    .abilities-box{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .about-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-description {
+        gap: 5rem;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 400px;
+    }
+
+    .about-box img {
+        width: 300px;
+    }
+
+    .main-titles-about {
+        padding-left: 0;
+    }
+
+    .portfolio-box {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 0;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    
+  
+
+    
+    
+    .portfolio-box img {
+        width: 350px;
+    }
+    
+  
+
+    .magnum,
+    .linktree,
+    .login,
+    .calculadora-imc{
+        background-color:#eee;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 200px;
+        border-radius: 10px;
+        
+    }
+
+    .magnum p,
+    .calculadora-imc p,
+    .linktree p,
+    .login p {
+        font-weight: 590;
+        font-size: 15px;
+    
+}
+
+.magnum-description,
+.imc-description,
+.linktree-description,
+.login-description {
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*definir um width irá delimitar ate onde o texto irá */
+    width: 15rem;
+    gap: 1.2rem;
+}
+  
+
+
+  
+ 
+
+}
