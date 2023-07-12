@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
   }
@@ -56,14 +57,14 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 22rem;
+    padding: 15rem;
 }
 
 
 .perfil-box{
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 50px;
 }
 
 
@@ -86,7 +87,8 @@ main{
 
 .perfil-img img{
     border-radius: 190px;
-    width: 180%;
+    width: 20rem;
+    height: 20rem;
     
 }
 
@@ -107,10 +109,11 @@ main{
 
 
 .abilities-box {
-    align-items: center;
+    align-items: left;
     display: flex;
     font-size: 1.7rem;
     gap: 1rem;
+    flex-direction: column;
 }
 
 .languages {
@@ -160,12 +163,12 @@ main{
 
 .portfolio-box {
     display: grid;
-    gap: 5rem;
+    gap: 4rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    height: auto;
     width: 100%;
-    padding: 12rem;
+    padding: 5rem;
+    justify-content: center;
 }
 
 .portfolio-description {
@@ -185,14 +188,16 @@ main{
     text-align: center;
     justify-content: space-evenly;
     padding: 3rem;
+    gap: 50px;
 }
 
 .magnum p,
 .calculadora-imc p,
 .linktree p,
 .login p {
-    font-weight: 590;
+    font-weight: 570;
     font-size: 18px;
+    color: #5a5a5a;
     
 }
 
@@ -304,6 +309,73 @@ main{
     padding: 3rem;
 }
 
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #eee;
+}
+
+.contact a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact a:hover{
+    transform: scale(1.1);
+    color: #4ebd57;
+}
+
+.contact i {
+    font-size: 20px;
+}
+
+.contact-box {
+    text-align: center;
+}
+
+.contact-links{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contact-description {
+    padding: 1rem;
+}
+
+
+
+.footer-box {
+    padding: 1.5rem;
+    background: #000;
+    color: #fff;
+}
+
+.foot-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials-foot i{
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.socials-foot i:hover{
+    transform: scale(1.2);
+}
+
+.socials-foot i {
+    font-size: 30px;
+    color: #fff;
+}
+
 
 #menu-bar{
     display: none;
@@ -318,11 +390,13 @@ header label{
 
 @media screen and (max-width: 900px) {
 
+
+
     header{
         background-color: #fff;
         width: 100%;
         padding: 20px;
-        
+        position: fixed;
     }
 
     header label {
@@ -368,6 +442,7 @@ header label{
         align-items: center;
         justify-content: center;
         gap: 0;
+        padding-top: 8rem ;
     
     }
     
@@ -421,28 +496,21 @@ header label{
         padding-left: 0;
     }
 
-    .portfolio-box {
+
+    .portfolio-description {
         display: flex;
         flex-direction: column;
-        height: auto;
-        width: 0;
-        padding: 0;
-        text-align: center;
+        align-items: center;
         justify-content: center;
     }
-    
   
-
-    
     
     .portfolio-box img {
-        width: 350px;
+        width: 300px;
     }
     
   
 
-    .magnum,
-    .linktree,
     .login,
     .calculadora-imc{
         background-color:#eee;
@@ -450,10 +518,36 @@ header label{
         flex-direction: column;
         text-align: center;
         align-items: center;
-        padding: 200px;
+        width: 25rem;
         border-radius: 10px;
-        
+        gap: 50px;
+        justify-content: center;
     }
+
+
+
+    .magnum,
+    .linktree {
+        background-color:#eee;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        width: 25rem;
+        border-radius: 10px;
+        gap: 50px;
+        justify-content: center
+    }
+    
+    .linktree-source,
+    .magnum-source,
+    .login-source,
+    .imc-source {
+        align-items: center;
+        gap: 50px;
+    }
+
+
 
     .magnum p,
     .calculadora-imc p,
@@ -462,27 +556,59 @@ header label{
         font-weight: 590;
         font-size: 15px;
     
-}
+    }   
 
-.magnum-description,
-.imc-description,
-.linktree-description,
-.login-description {
-    line-height: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /*definir um width irá delimitar ate onde o texto irá */
-    width: 15rem;
-    gap: 1.2rem;
-}
-  
+    .magnum-description,
+    .imc-description,
+    .linktree-description,
+    .login-description {
+        line-height: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /*definir um width irá delimitar ate onde o texto irá */
+        width: 15rem;
+        gap: 1.2rem;
+    }
 
+    .contact{
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        flex-direction: column;
+        padding: 30px;
+        background-image: #eee;
+        margin: 30px;
+        border-radius: 20px;
+    }
+    
+    
+    .contact i {
+        font-size: 20px;
+    }
+    
+    .contact-box {
+        text-align: center;
+    }
+    
+    .contact-links{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .contact-description {
+        padding: 1rem;
+    }
+    
 
-  
+    .footer-box{
+        padding: 0;
+    }
+    
  
 
 }
