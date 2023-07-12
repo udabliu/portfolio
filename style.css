@@ -388,7 +388,7 @@ header label{
     display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 901px) {
 
 
 
@@ -433,7 +433,7 @@ header label{
 
 
     .perfil-img img {
-        width: 15rem;
+        width: 20rem;
     }
 
     .info-box{
@@ -461,6 +461,7 @@ header label{
         flex-direction: column;
         align-items: center;
         gap: 50px;
+        width: 40rem;
         
     }
 
@@ -503,10 +504,11 @@ header label{
         align-items: center;
         justify-content: center;
     }
-  
+
+   
     
     .portfolio-box img {
-        width: 300px;
+        width: 370px;
     }
     
   
@@ -518,7 +520,6 @@ header label{
         flex-direction: column;
         text-align: center;
         align-items: center;
-        width: 25rem;
         border-radius: 10px;
         gap: 50px;
         justify-content: center;
@@ -533,7 +534,6 @@ header label{
         flex-direction: column-reverse;
         text-align: center;
         align-items: center;
-        width: 25rem;
         border-radius: 10px;
         gap: 50px;
         justify-content: center
@@ -570,7 +570,7 @@ header label{
         align-items: center;
         text-align: center;
         /*definir um width irá delimitar ate onde o texto irá */
-        width: 15rem;
+        width: 20rem;
         gap: 1.2rem;
     }
 
