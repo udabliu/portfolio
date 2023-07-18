@@ -260,7 +260,7 @@ main{
 .imc-source,
 .linktree-source,
 .login-source {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -273,6 +273,8 @@ main{
     text-decoration: none;
     color: #000;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
 .magnum-source i,
@@ -440,7 +442,7 @@ header label{
         align-items: center;
         justify-content: center;
         gap: 0;
-        padding-top: 8rem ;
+        padding-top: 8rem;
     
     }
     
@@ -459,12 +461,12 @@ header label{
         flex-direction: column;
         align-items: center;
         gap: 50px;
-        width: 40rem;
         
     }
 
     .info-description p{
         font-size: 18px;
+        width: 300px;
     }
 
     .abilities-box{
@@ -506,7 +508,7 @@ header label{
    
     
     .portfolio-box img {
-        width: 370px;
+        width: 290px;
     }
     
   
@@ -521,6 +523,7 @@ header label{
         border-radius: 10px;
         gap: 50px;
         justify-content: center;
+        width: 20rem;
     }
 
 
@@ -534,7 +537,9 @@ header label{
         align-items: center;
         border-radius: 10px;
         gap: 50px;
-        justify-content: center
+        justify-content: center;
+        width: 20rem;
+        
     }
     
     .linktree-source,
@@ -545,6 +550,7 @@ header label{
         gap: 50px;
     }
 
+    
 
 
     .magnum p,
@@ -568,7 +574,7 @@ header label{
         align-items: center;
         text-align: center;
         /*definir um width irá delimitar ate onde o texto irá */
-        width: 20rem;
+        width: 15rem;
         gap: 1.2rem;
     }
 
@@ -610,3 +616,5 @@ header label{
  
 
 }
+
+
