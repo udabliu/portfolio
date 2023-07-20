@@ -24,7 +24,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1em;
+    padding: 1.3em;
     background-color: #fff;
     width: 100%;
 }
@@ -35,7 +35,7 @@ main{
     justify-content: space-between;
     gap: 30px;
     list-style: none;
-    padding-right: 25px;
+    padding-right: 50px;
     align-items: center;
 }
 
@@ -141,7 +141,7 @@ main{
 }
 
 .about-description p {
-    line-height: 27px;
+    line-height: 29px;
     font-size: 18px;
     padding: 40px;
     color: #fff;
@@ -179,11 +179,20 @@ main{
 
 .portfolio-box img {
     width: 600px;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.portfolio-box img:hover {
+    transform: scale(1.03);
 }
 
 .magnum,
-.linktree{
-    background-color:#eee;
+.linktree,
+.mysite,
+.calculadora-imc,
+.login{
+    background-color:#fff;
     display: flex;
     text-align: center;
     justify-content: space-evenly;
@@ -191,20 +200,24 @@ main{
     gap: 50px;
 }
 
+
+
 .magnum p,
 .calculadora-imc p,
 .linktree p,
-.login p {
+.login p,
+.mysite p {
     font-weight: 570;
     font-size: 18px;
     color: #5a5a5a;
-    
+    line-height: 30px;
 }
 
 .magnum-description,
 .imc-description,
 .linktree-description,
-.login-description {
+.login-description,
+.mysite-description {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -218,7 +231,8 @@ main{
 .magnum-description i,
 .imc-description i,
 .linktree-description i,
-.login-description i{
+.login-description i,
+.mysite-description i{
     font-size: 25px;
 }
 
@@ -226,7 +240,8 @@ main{
 .magnum-description h2,
 .imc-description h2,
 .linktree-description h2,
-.login-description h2{
+.login-description h2,
+.mysite-description h2{
     padding: 20px;
     text-align: center;
     align-items: center;
@@ -249,27 +264,49 @@ main{
     text-decoration: underline #6cccf8 3px;
 }
 
-.magnum img,
-.calculadora-imc img,
-.linktree img,
-.login img{
-    border-radius: 10px;
+.mysite-description h2 {
+    text-decoration: underline #686868 3px;
 }
+
+
 
 .magnum-source,
 .imc-source,
 .linktree-source,
-.login-source {
+.login-source,
+.mysite-source {
     padding: 30px;
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
 }
+
+
+.tecnologies-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tecnologies {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
 
 .magnum-source a,
 .imc-source a,
 .linktree-source a,
-.login-source a{
+.login-source a,
+.mysite-source a{
     text-decoration: none;
     color: #000;
     transition: 0.3s;
@@ -280,7 +317,8 @@ main{
 .magnum-source i,
 .imc-source i,
 .linktree-source i,
-.login-source i{
+.login-source i,
+.mysite-source i{
     font-size: 29px;
 }
 
@@ -301,15 +339,11 @@ main{
     color: #6cccf8;
 }
 
-.calculadora-imc,
-.login{
-    background-color:#eee;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: space-evenly;
-    padding: 3rem;
+.mysite-source a:hover {
+    color: #686868;
 }
+
+
 
 .contact{
     display: flex;
@@ -529,7 +563,8 @@ header label{
 
 
     .magnum,
-    .linktree {
+    .linktree,
+    .mysite {
         background-color:#eee;
         display: flex;
         flex-direction: column-reverse;
@@ -545,7 +580,8 @@ header label{
     .linktree-source,
     .magnum-source,
     .login-source,
-    .imc-source {
+    .imc-source,
+    .mysite-source {
         align-items: center;
         gap: 50px;
     }
@@ -556,7 +592,8 @@ header label{
     .magnum p,
     .calculadora-imc p,
     .linktree p,
-    .login p {
+    .login p,
+    .mysite p {
         font-weight: 590;
         font-size: 15px;
     
@@ -565,7 +602,8 @@ header label{
     .magnum-description,
     .imc-description,
     .linktree-description,
-    .login-description {
+    .login-description,
+    .mysite-description {
         line-height: 1.5rem;
         display: flex;
         flex-direction: column;
