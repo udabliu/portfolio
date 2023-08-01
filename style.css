@@ -121,7 +121,11 @@ main{
     flex-direction: row;
     gap: 20px;
     align-items: left;
-    font-size: 30px;
+    font-size: 40px;
+}
+
+#flask {
+    width: 2rem;
 }
 
 .about-box {
