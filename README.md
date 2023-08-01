@@ -11,6 +11,6 @@ Nesta seção, destaco alguns dos projetos mais interessantes e desafiadores que
 descrição e um link para o código-fonte ou demonstração ao vivo, onde você poderá conferir todos os detalhes como um usuário.
 
 ## Tecnologias Utilizadas
-Linguagens de Programação: [Javascript]
-Ferramentas de Desenvolvimento: [Git e Visual Studio Code]
-Outras tecnologias: [HTML e CSS]
+- Linguagens de Programação: [Javascript]
+- Ferramentas de Desenvolvimento: [Git e Visual Studio Code]
+- Outras tecnologias: [HTML e CSS]
